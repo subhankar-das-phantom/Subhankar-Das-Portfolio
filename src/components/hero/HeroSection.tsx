@@ -42,14 +42,19 @@ export function HeroSection() {
               />
             </h1>
 
+            {/* Hero Editorial Subtext & Positioning */}
             <MotionReveal delay={0.14}>
               <div className="space-y-3 pt-2 max-w-2xl">
+                <div className="font-mono text-xs text-[#174A7E] dark:text-[#60A5FA] font-semibold tracking-wide">
+                  Full-Stack / MERN Developer · BCA (Hons.) student · West Bengal
+                </div>
                 <p className="text-base sm:text-lg text-[#565B61] dark:text-[#9BA1A6] leading-relaxed">
-                  {siteConfig.supportingText}
+                  I build web applications across frontend, backend, databases, and deployment—with a focus on real workflows, data integrity, performance, and products that can actually be used.
                 </p>
-                <p className="text-sm sm:text-base text-[#7C8288] leading-relaxed">
-                  {siteConfig.secondaryLine}
-                </p>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[4px] bg-[#2D6A4F]/10 dark:bg-[#2D6A4F]/20 border border-[#2D6A4F]/30 text-xs font-mono text-[#2D6A4F] dark:text-[#34D399]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2D6A4F] dark:bg-[#34D399] animate-pulse" />
+                  <span>Open to software development internships &amp; junior full-stack opportunities.</span>
+                </div>
               </div>
             </MotionReveal>
 
@@ -64,11 +69,17 @@ export function HeroSection() {
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/resume"
                   className="btn-tactile inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono font-medium text-[#17191C] dark:text-[#F5F5F3] bg-[#FBFAF7] dark:bg-[#14161A] hover:bg-[#ECECE7] dark:hover:bg-[#1E2126] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px] cursor-pointer focus-visible:outline-2"
                 >
-                  <Mail className="w-3.5 h-3.5 text-[#565B61] dark:text-[#9BA1A6]" />
-                  <span>GET IN TOUCH</span>
+                  <span>VIEW RESUME</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-[#565B61] dark:text-[#9BA1A6] hover:text-[#174A7E] dark:hover:text-[#60A5FA] transition-colors pl-1"
+                >
+                  <Mail className="w-3.5 h-3.5 text-[#7C8288]" />
+                  <span>Contact</span>
                 </Link>
 
                 {/* Secondary brand links with official icons supporting labels */}
@@ -101,23 +112,23 @@ export function HeroSection() {
           <MotionReveal delay={0.24} className="lg:col-span-4">
             <div className="border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[7px] bg-[#FBFAF7] dark:bg-[#0C0D0F] p-5 space-y-4 shadow-xs">
               <div className="flex items-center justify-between border-b border-[#D9D9D4] dark:border-[#1C1F26] pb-2 text-[0.70rem] font-mono text-[#7C8288]">
-                <span>DISPATCH STATUS</span>
-                <span className="text-[#2D6A4F] dark:text-[#34D399] font-semibold">ACTIVE</span>
+                <span>RECRUITER OVERVIEW</span>
+                <span className="text-[#2D6A4F] dark:text-[#34D399] font-semibold">AVAILABLE</span>
               </div>
               <div className="space-y-1.5 text-xs">
                 <p className="font-mono text-[#7C8288] text-[0.70rem] uppercase">
-                  Current Positioning
+                  Target Positioning
                 </p>
                 <p className="font-medium text-[#17191C] dark:text-[#F5F5F3]">
-                  Full-Stack &amp; Systems Engineering
+                  Full-Stack / MERN Engineering
                 </p>
-                <p className="text-[#565B61] dark:text-[#9BA1A6] text-[0.80rem]">
-                  Available for internships &amp; high-impact software engineering roles.
+                <p className="text-[#565B61] dark:text-[#9BA1A6] text-[0.80rem] leading-relaxed">
+                  Proven real-world product ownership: dual-entry ledgers, FIFO lot mechanics, and sub-second MongoDB aggregations.
                 </p>
               </div>
               <div className="pt-2 border-t border-[#D9D9D4] dark:border-[#1C1F26] text-[0.70rem] font-mono text-[#565B61] dark:text-[#9BA1A6] flex items-center justify-between">
-                <span>LOCATION</span>
-                <span className="text-[#17191C] dark:text-[#F5F5F3] font-medium">WEST BENGAL, INDIA</span>
+                <span>EDUCATION</span>
+                <span className="text-[#17191C] dark:text-[#F5F5F3] font-medium">BCA (HONS.) · 8.79 SGPA</span>
               </div>
             </div>
           </MotionReveal>

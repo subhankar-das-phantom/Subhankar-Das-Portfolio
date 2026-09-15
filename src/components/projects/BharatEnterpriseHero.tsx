@@ -140,21 +140,101 @@ export function BharatEnterpriseHero() {
           </div>
         </MotionReveal>
 
-        {/* Feature System Tags */}
+        {/* Dual Level Representation: Level 1 Recruiter Summary & Performance Evidence */}
         <MotionReveal delay={0.06}>
-          <div className="space-y-3 pt-4">
-            <p className="font-mono text-xs text-[#7C8288] uppercase tracking-wider">
-              FEATURE SYSTEM ARCHITECTURE
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {bharatEnterprise.features.map((feature) => (
-                <span
-                  key={feature}
-                  className="px-3 py-1.5 text-xs font-mono text-[#17191C] dark:text-[#F5F5F3] bg-[#ECECE7] dark:bg-[#14161A] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px] hover:border-[#BFC2BE] dark:hover:border-[#383D45] transition-colors"
-                >
-                  {feature}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+            {/* Recruiter Summary: Core Operational Scope */}
+            <div className="md:col-span-6 border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[7px] bg-[#F5F4F0] dark:bg-[#0C0D0F] p-6 space-y-4">
+              <div className="flex items-center justify-between border-b border-[#D9D9D4] dark:border-[#1C1F26] pb-3 text-xs font-mono">
+                <span className="text-[#C56A3A] dark:text-[#FB923C] font-semibold">
+                  LEVEL 1 // OPERATIONAL SCOPE
                 </span>
-              ))}
+                <span className="text-[#7C8288] text-[0.70rem]">RECRUITER SUMMARY</span>
+              </div>
+              <p className="text-xs text-[#565B61] dark:text-[#9BA1A6] leading-relaxed">
+                Independently built and shipped a complete commercial platform covering:
+              </p>
+              <div className="grid grid-cols-2 gap-2 text-xs font-mono text-[#17191C] dark:text-[#F5F5F3]">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Invoicing &amp; Billing
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Rolling Customer Ledgers
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Batch &amp; FIFO Expiry
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Purchasing &amp; Vendors
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Backend RBAC Access
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Multi-Tenant Partitioning
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  Collections &amp; Aging Debt
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#174A7E] dark:bg-[#60A5FA]" />
+                  SaaS Subscriptions
+                </span>
+              </div>
+            </div>
+
+            {/* Recruiter Evidence: Concrete Optimization Proof Points */}
+            <div className="md:col-span-6 border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[7px] bg-[#F5F4F0] dark:bg-[#0C0D0F] p-6 space-y-4">
+              <div className="flex items-center justify-between border-b border-[#D9D9D4] dark:border-[#1C1F26] pb-3 text-xs font-mono">
+                <span className="text-[#2D6A4F] dark:text-[#34D399] font-semibold">
+                  MEASURABLE EVIDENCE // BENCHMARKS
+                </span>
+                <span className="text-[#7C8288] text-[0.70rem]">PRODUCTION METRICS</span>
+              </div>
+              <div className="space-y-3 font-mono">
+                <div className="p-3 bg-[#FBFAF7] dark:bg-[#14161A] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px] flex items-center justify-between text-xs">
+                  <div>
+                    <div className="text-[0.70rem] text-[#7C8288]">REPORT TRANSMISSION PAYLOAD</div>
+                    <div className="font-semibold text-[#17191C] dark:text-[#F5F5F3] pt-0.5">
+                      2.3 MB <span className="text-[#7C8288]">→</span> ~5 KB
+                    </div>
+                  </div>
+                  <span className="text-[0.72rem] font-bold text-[#2D6A4F] dark:text-[#34D399] bg-[#2D6A4F]/10 px-2 py-0.5 rounded">
+                    ~99.8% REDUCTION
+                  </span>
+                </div>
+
+                <div className="p-3 bg-[#FBFAF7] dark:bg-[#14161A] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px] flex items-center justify-between text-xs">
+                  <div>
+                    <div className="text-[0.70rem] text-[#7C8288]">COLD-START LEDGER RECONCILIATION</div>
+                    <div className="font-semibold text-[#17191C] dark:text-[#F5F5F3] pt-0.5">
+                      128.38 ms <span className="text-[#7C8288]">→</span> 34.64 ms
+                    </div>
+                  </div>
+                  <span className="text-[0.72rem] font-bold text-[#2D6A4F] dark:text-[#34D399] bg-[#2D6A4F]/10 px-2 py-0.5 rounded">
+                    ~73% FASTER
+                  </span>
+                </div>
+
+                <div className="p-3 bg-[#FBFAF7] dark:bg-[#14161A] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px] flex items-center justify-between text-xs">
+                  <div>
+                    <div className="text-[0.70rem] text-[#7C8288]">PAGINATED QUERY PATH</div>
+                    <div className="font-semibold text-[#17191C] dark:text-[#F5F5F3] pt-0.5">
+                      56.01 ms <span className="text-[#7C8288]">→</span> 23.02 ms
+                    </div>
+                  </div>
+                  <span className="text-[0.72rem] font-bold text-[#2D6A4F] dark:text-[#34D399] bg-[#2D6A4F]/10 px-2 py-0.5 rounded">
+                    ~59% FASTER
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </MotionReveal>
