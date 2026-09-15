@@ -53,17 +53,63 @@ export function ContactSection() {
         {/* Contact Module */}
         <div className="border-t border-[#D9D9D4] dark:border-[#1C1F26] pt-12 space-y-8">
           <MotionReveal>
-            <div className="space-y-2 max-w-2xl">
-              <p className="font-mono text-xs text-[#C56A3A] dark:text-[#FB923C] uppercase tracking-widest">
-                07 / GET IN TOUCH
-              </p>
+            <div className="space-y-3 max-w-3xl">
+              <div className="flex items-center gap-3 font-mono text-xs text-[#C56A3A] dark:text-[#FB923C] tracking-widest uppercase">
+                <span>COORDINATES</span>
+                <span className="text-[#7C8288]">/ DIRECT CONTACT</span>
+              </div>
               <h2 className="text-3xl sm:text-5xl font-semibold tracking-[-0.035em] text-[#17191C] dark:text-[#F5F5F3]">
-                Have a problem worth solving?
+                LET’S BUILD SOFTWARE THAT MATTERS.
               </h2>
-              <p className="text-sm md:text-base text-[#565B61] dark:text-[#9BA1A6] leading-relaxed pt-2">
-                Whether discussing operational SaaS architecture, MERN backend engineering,
-                database optimization, or internship opportunities—my inbox is open.
-              </p>
+              <div className="space-y-3 text-sm md:text-base text-[#565B61] dark:text-[#9BA1A6] leading-relaxed pt-2">
+                <p>
+                  I’m currently open to software development internships and junior full-stack engineering roles where I can contribute across frontend, backend, databases, and product engineering.
+                </p>
+                <p>
+                  I’m particularly interested in teams where I can take ownership, solve real product problems, and keep improving the systems I build.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-3 pt-3">
+                <Link
+                  href="/resume"
+                  className="btn-tactile inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium text-[#F5F4F0] bg-[#174A7E] hover:bg-[#0F3B68] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] rounded-[4px] shadow-xs"
+                >
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>View Resume</span>
+                </Link>
+                <a
+                  href={siteConfig.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-tactile inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium text-[#17191C] dark:text-[#F5F5F3] bg-[#FBFAF7] dark:bg-[#14161A] hover:bg-[#ECECE7] dark:hover:bg-[#1E2126] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px]"
+                >
+                  <SocialIcon brand="github" size={14} />
+                  <span>GitHub</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </a>
+                <a
+                  href={siteConfig.links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-tactile inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium text-[#17191C] dark:text-[#F5F5F3] bg-[#FBFAF7] dark:bg-[#14161A] hover:bg-[#ECECE7] dark:hover:bg-[#1E2126] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px]"
+                >
+                  <SocialIcon brand="linkedin" size={14} />
+                  <span>LinkedIn</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </a>
+                <a
+                  href={siteConfig.links.gmailCompose}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-tactile inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium text-[#17191C] dark:text-[#F5F5F3] bg-[#FBFAF7] dark:bg-[#14161A] hover:bg-[#ECECE7] dark:hover:bg-[#1E2126] border border-[#D9D9D4] dark:border-[#1C1F26] rounded-[4px]"
+                  title="Compose in Gmail"
+                >
+                  <SocialIcon brand="email" size={14} />
+                  <span>Email</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                </a>
+              </div>
             </div>
           </MotionReveal>
 

@@ -18,18 +18,23 @@ export function HiringCTASection() {
                 <span>AVAILABILITY &amp; HIRING STATUS</span>
               </div>
               <span className="font-mono text-xs text-[#174A7E] dark:text-[#60A5FA] font-medium">
-                IMMEDIATE / SUMMER 2026 ENGAGEMENTS
+                OPEN TO INTERNSHIPS &amp; JUNIOR ROLES
               </span>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-4">
                 <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold tracking-[-0.03em] text-[#17191C] dark:text-[#F5F5F3]">
-                  Looking for the next problem to work on.
+                  LET’S BUILD SOFTWARE THAT MATTERS.
                 </h2>
-                <p className="text-sm sm:text-base text-[#565B61] dark:text-[#9BA1A6] leading-relaxed max-w-2xl">
-                  I’m currently interested in software development internships and junior full-stack engineering opportunities where I can take end-to-end ownership across frontend interfaces, backend APIs, data schemas, and production reliability.
-                </p>
+                <div className="space-y-3 text-sm sm:text-base text-[#565B61] dark:text-[#9BA1A6] leading-relaxed max-w-2xl">
+                  <p>
+                    I’m currently open to software development internships and junior full-stack engineering roles where I can contribute across frontend, backend, databases, and product engineering.
+                  </p>
+                  <p>
+                    I’m particularly interested in teams where I can take ownership, solve real product problems, and keep improving the systems I build.
+                  </p>
+                </div>
 
                 <div className="flex flex-wrap gap-4 pt-2 text-xs font-mono text-[#17191C] dark:text-[#F5F5F3]">
                   <div className="flex items-center gap-1.5">
@@ -39,10 +44,6 @@ export function HiringCTASection() {
                   <div className="flex items-center gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#2D6A4F] dark:text-[#34D399]" />
                     <span>Junior Full-Stack Roles</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#2D6A4F] dark:text-[#34D399]" />
-                    <span>Remote or Hybrid</span>
                   </div>
                 </div>
               </div>
